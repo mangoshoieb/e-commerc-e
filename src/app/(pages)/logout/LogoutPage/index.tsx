@@ -2,7 +2,7 @@
 
 import React, { Fragment, useEffect, useState } from 'react'
 import Link from 'next/link'
-
+import classes from './index.module.scss'
 import { Settings } from '../../../../payload/payload-types'
 import { useAuth } from '../../../_providers/Auth'
 
@@ -43,7 +43,9 @@ export const LogoutPage: React.FC<{
               </Fragment>
             )}
             {` To log back in, `}
-            <Link href="/login">click here</Link>
+            <Link href="/login" className={classes.Button}>
+              click here
+            </Link>
             {'.'}
           </p>
         </div>

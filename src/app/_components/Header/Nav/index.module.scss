@@ -8,6 +8,7 @@
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
+  font-size: 20px;
 
   > * {
     text-decoration: none;
@@ -17,4 +18,9 @@
 .hide {
   opacity: 0;
   visibility: hidden;
+}
+.pages{
+  // font-size: 7px;
+  font-weight: bold;
+  color: black;
 }
